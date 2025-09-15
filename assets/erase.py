@@ -4,7 +4,7 @@ def clean_dictionary(input_file, output_file):
         words = f.readlines()
 
     # garder seulement les mots de 3 lettres ou plus
-    cleaned = [w.strip() for w in words if len(w.strip()) > 2]
+    cleaned = [w.strip() for w in words if len(w.strip()) > 3]
 
     with open(output_file, "w", encoding="utf-8") as f:
         for w in cleaned:
